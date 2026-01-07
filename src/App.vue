@@ -7,36 +7,30 @@
         <p v-if="warning" class="warning">{{ warning }}</p>
       </div>
     </header>
-
     <section class="strip">
       <div class="strip-inner">
         <CompanyCard v-for="c in companies" :key="c.sheet" :name="c.name" :logo="c.logo" :latestLabel="c.latestLabel"
           :revenueLatest="c.latest" :qoq="c.qoq" :qoqPct="c.qoqPct" />
       </div>
     </section>
-
     <section class="grid-2">
       <BaseCard class="panel">
         <div class="panel-head">
           <h2>Revenue last 3 years</h2>
         </div>
-
         <div v-if="loading" class="placeholder">Loading…</div>
         <div v-else-if="fatalError" class="placeholder">{{ fatalError }}</div>
         <LineChart v-else :labels="lineLabels" :datasets="lineDatasets" />
       </BaseCard>
-
       <BaseCard class="panel">
         <div class="panel-head">
           <h2>Revenue Breakdown Magnificent Seven</h2>
         </div>
-
         <div v-if="loading" class="placeholder">Loading…</div>
         <div v-else-if="fatalError" class="placeholder">{{ fatalError }}</div>
         <DoughnutChart v-else :labels="donutLabels" :values="donutValues" />
       </BaseCard>
     </section>
-
     <section class="grid-3">
       <BaseCard class="panel">
         <div class="panel-head">
@@ -46,7 +40,6 @@
           (Noch keine Daten angebunden – sobald du mir sagst, in welcher Zeile/Spalte Net Income liegt, hänge ich’s an.)
         </div>
       </BaseCard>
-
       <BaseCard class="panel">
         <div class="panel-head">
           <h2>Gross Margin in % LQ</h2>
@@ -55,12 +48,10 @@
           (Noch keine Daten angebunden – kann ich genauso anschließen wie Revenue.)
         </div>
       </BaseCard>
-
       <BaseCard class="panel">
         <div class="panel-head">
           <h2>Revenue Growth in % YoY</h2>
         </div>
-
         <div v-if="loading" class="placeholder">Loading…</div>
         <div v-else-if="fatalError" class="placeholder">{{ fatalError }}</div>
         <BarChart v-else :labels="yoyLabels" :values="yoyValues" title="YoY %" />
@@ -223,9 +214,7 @@ body {
 
 #app {
   width: 100%;
-  /* statt 100vw */
   overflow-x: hidden;
-  /* verhindert horizontales Scrollen */
   min-height: 100vh;
   padding: 70px 90px;
   background: radial-gradient(71.11% 100% at 50% 0%, #020204 14.6%, #011f35 100%);
@@ -378,7 +367,6 @@ h2 {
   user-select: none;
 }
 
-/* Mobile: sauber umbrechen */
 @media (max-width: 600px) {
   .footer {
     flex-wrap: wrap;
@@ -396,7 +384,6 @@ h2 {
   }
 }
 
-/* 1) Laptops / wenn DevTools offen sind */
 @media (max-width: 1300px) {
   #app {
     padding: 48px 40px;
@@ -407,7 +394,6 @@ h2 {
   }
 }
 
-/* 2) Tablets */
 @media (max-width: 1000px) {
   #app {
     padding: 36px 22px;
@@ -428,7 +414,6 @@ h2 {
   }
 }
 
-/* 3) Phones */
 @media (max-width: 600px) {
   #app {
     padding: 24px 14px;
