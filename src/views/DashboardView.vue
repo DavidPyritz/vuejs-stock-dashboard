@@ -1,3 +1,7 @@
+<!-- <router-link to="/impressum">Impressum</router-link>
+<span class="sep">•</span>
+<router-link to="/datenschutz">Datenschutz</router-link> -->
+
 <template>
   <div class="dashboard">
     <header class="dash-header">
@@ -66,11 +70,6 @@
         <BarChart v-else :labels="yoyLabels" :values="yoyValues" title="YoY %" />
       </BaseCard>
     </section>
-    <footer class="footer">
-      <a href="/impressum.html">Impressum</a>
-      <span class="sep">•</span>
-      <a href="/datenschutz.html">Datenschutz</a>
-    </footer>
   </div>
 </template>
 
@@ -222,10 +221,8 @@ body {
 }
 
 #app {
-  width: 100%;
-  /* statt 100vw */
-  overflow-x: hidden;
-  /* verhindert horizontales Scrollen */
+  width: 100%;              /* statt 100vw */
+  overflow-x: hidden;       /* verhindert horizontales Scrollen */
   min-height: 100vh;
   padding: 70px 90px;
   background: radial-gradient(71.11% 100% at 50% 0%, #020204 14.6%, #011f35 100%);
@@ -325,83 +322,14 @@ h2 {
   line-height: 1.45;
 }
 
-.footer {
-  margin-top: 26px;
-  padding: 14px 18px;
-  border-radius: 16px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 
-  background: rgba(1, 31, 53, 0.55);
-  border: 1px solid rgba(120, 200, 255, 0.16);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
-
-  color: rgba(234, 246, 255, 0.85);
-}
-
-.footer a {
-  color: rgba(234, 246, 255, 0.9);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 0.2px;
-
-  padding: 8px 12px;
-  border-radius: 999px;
-
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-
-  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
-}
-
-.footer a:hover {
-  background: rgba(122, 214, 255, 0.12);
-  border-color: rgba(122, 214, 255, 0.22);
-  transform: translateY(-1px);
-}
-
-.footer a:active {
-  transform: translateY(0);
-}
-
-.footer a:focus-visible {
-  outline: 2px solid rgba(122, 214, 255, 0.55);
-  outline-offset: 2px;
-}
-
-.sep {
-  opacity: 0.5;
-  user-select: none;
-}
-
-/* Mobile: sauber umbrechen */
-@media (max-width: 600px) {
-  .footer {
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 12px 12px;
-  }
-
-  .footer a {
-    width: 100%;
-    text-align: center;
-  }
-
-  .sep {
-    display: none;
-  }
-}
 
 /* 1) Laptops / wenn DevTools offen sind */
 @media (max-width: 1300px) {
   #app {
     padding: 48px 40px;
   }
-
   .dashboard {
     max-width: 100%;
   }

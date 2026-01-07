@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Datenschutz Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px 16px;
+    }
+
+    .card {
+      max-width: 720px;
+      width: 100%;
+      background: #fff;
+      padding: 24px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    .title {
+      margin: 0 0 4px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .lead {
+      margin: 0 0 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .dl {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 4px 16px;
+      font-size: 0.95rem;
+    }
+
+    .dt {
+      font-weight: 600;
+    }
+
+    h2.sub {
+      margin: 24px 0 12px;
+      text-align: center;
+      font-size: 1.3rem;
+    }
+
+    a {
+      color: #005bbb;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .credits {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    .credits li {
+      margin-bottom: 4px;
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .back {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: #005bbb;
+      background: #fff;
+      border-radius: 999px;
+      padding: 6px 10px;
+      border: 1px solid #ddd;
+    }
+
+    .back svg {
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .dl {
+        grid-template-columns: 1fr;
+        gap: 2px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="back" href="javascript:history.back()" aria-label="Zurück">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    Zurück
+  </a>
+  <main class="wrapper">
+    <article class="card" role="article">
+      <h1 class="title">Datenschutz&shy;erklärung</h1>
+      <p class="lead">Informationen gemäß DSGVO</p>
+
+      <div class="dl" aria-label="Verantwortlicher">
+        <div class="dt">Verantwortlich</div>
+        <div>David Pyritz</div>
+
+        <div class="dt">Kontakt</div>
+        <div>
+          E-Mail: <a href="mailto:david.pyritz@gmail.com">david.pyritz@gmail.com</a>
+        </div>
+      </div>
+      <hr />
+      <h2 class="sub">Ihre Betroffenenrechte</h2>
+      <p>Sie können jederzeit folgende Rechte ausüben:</p>
+      <ul>
+        <li>Auskunft (Art.&nbsp;15 DSGVO)</li>
+        <li>Berichtigung (Art.&nbsp;16 DSGVO)</li>
+        <li>Löschung (Art.&nbsp;17 DSGVO)</li>
+        <li>Einschränkung der Verarbeitung (Art.&nbsp;18 DSGVO)</li>
+        <li>Widerspruch (Art.&nbsp;21 DSGVO)</li>
+        <li>Datenübertragbarkeit (Art.&nbsp;20 DSGVO)</li>
+      </ul>
+      <p>Erteilte Einwilligungen können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Beschwerden richten Sie an
+        die zuständige Aufsichtsbehörde (<a
+          href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html" target="_blank"
+          rel="noopener nofollow">Übersicht der Landesbehörden</a>).</p>
+      <h2 class="sub">Erfassung allgemeiner Informationen</h2>
+      <p>Beim Besuch der Website werden automatisch Server-Logfiles erfasst (z.&nbsp;B. Browser, Betriebssystem, Domain,
+        IP-Adresse). Dies dient:</p>
+      <ul>
+        <li>dem stabilen Verbindungsaufbau,</li>
+        <li>der reibungslosen Nutzung,</li>
+        <li>der Sicherheit/Stabilität des Systems sowie</li>
+        <li>der Optimierung unseres Angebots.</li>
+      </ul>
+      <p>Eine personenbezogene Auswertung findet nicht statt; ggf. werden Daten anonym statistisch ausgewertet.</p>
+      <h2 class="sub">Rechtsgrundlage &amp; Empfänger</h2>
+      <p>Verarbeitung gem. Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse an Stabilität und
+        Funktionalität). Empfänger können technische Dienstleister als Auftragsverarbeiter sein.</p>
+
+      <h2 class="sub">Speicherdauer &amp; Erforderlichkeit</h2>
+      <p>Sitzungsdaten werden mit Sitzungsende gelöscht; Logfiles spätestens nach 14&nbsp;Tagen (längere Speicherung nur
+        mit anonymisierten IPs). Die Bereitstellung ist nicht gesetzlich vorgeschrieben, ohne IP-Adresse ist der Dienst
+        jedoch nicht funktionsfähig.</p>
+      <h2 class="sub">Google Webfonts</h2>
+      <p>Zur plattformübergreifend korrekten Darstellung nutzen wir „Google Web Fonts“ (Google LLC). Infos: <a
+          href="https://developers.google.com/fonts/faq" target="_blank"
+          rel="noopener nofollow">developers.google.com/fonts/faq</a>, Datenschutz: <a
+          href="https://www.google.com/policies/privacy/" target="_blank"
+          rel="noopener nofollow">google.com/policies/privacy/</a>.</p>
+
+      <h2 class="sub">SSL-Verschlüsselung</h2>
+      <p>Zum Schutz Ihrer Daten verwenden wir aktuelle Verschlüsselungsverfahren (z.&nbsp;B. HTTPS/SSL).</p>
+      <hr />
+      <h2 class="sub">Widerspruch nach Art.&nbsp;21 DSGVO</h2>
+      <p>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die
+        Verarbeitung Sie betreffender personenbezogener Daten nach Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO Widerspruch
+        einzulegen; dies gilt auch für darauf gestütztes Profiling.</p>
+      <div class="dl" aria-label="Empfänger eines Widerspruchs">
+        <div class="dt">Empfänger</div>
+        <div>David Pyritz</div>
+      </div>
+      <hr />
+      <h2 class="sub">Änderungen</h2>
+      <p>Wir passen diese Datenschutzerklärung an, wenn rechtliche Anforderungen oder unser Angebot dies erfordern.</p>
+      <h2 class="sub">Fragen zum Datenschutz</h2>
+      <p>Schreiben Sie uns einfach per E-Mail; wir helfen gerne weiter.</p>
+      <hr />
+      <h2 class="sub">Quellen &amp; Credits</h2>
+      <footer>© Copyright 2025 David Pyritz</footer>
+    </article>
+  </main>
+</body>
+
+</html>

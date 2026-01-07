@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Impressum Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px 16px;
+    }
+
+    .card {
+      max-width: 720px;
+      width: 100%;
+      background: #fff;
+      padding: 24px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    .title {
+      margin: 0 0 4px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .lead {
+      margin: 0 0 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .dl {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 4px 16px;
+      font-size: 0.95rem;
+    }
+
+    .dt {
+      font-weight: 600;
+    }
+
+    h2.sub {
+      margin: 24px 0 12px;
+      text-align: center;
+      font-size: 1.3rem;
+    }
+
+    a {
+      color: #005bbb;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .credits {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    .credits li {
+      margin-bottom: 4px;
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .back {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: #005bbb;
+      background: #fff;
+      border-radius: 999px;
+      padding: 6px 10px;
+      border: 1px solid #ddd;
+    }
+
+    .back svg {
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .dl {
+        grid-template-columns: 1fr;
+        gap: 2px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="back" href="javascript:history.back()" aria-label="Zurück">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    Zurück
+  </a>
+  <main class="wrapper">
+    <article class="card" role="article">
+      <h1 class="title">Impressum</h1>
+      <p class="lead">Angaben gemäß § 5 TMG</p>
+      <div class="dl" aria-label="Anbieterkennzeichnung">
+        <div class="dt">Verantwortlich</div>
+        <div>David Pyritz</div>
+        <div class="dt">Vertreten durch</div>
+        <div>David Pyritz</div>
+        <div class="dt">Kontakt</div>
+        <div>
+          E-Mail: <a href="mailto:#">david.pyritz@gmail.com</a>
+        </div>
+      </div>
+      <hr />
+      <h2 class="sub">Quellen &amp; Credits</h2>
+      <ul class="credits">
+        <li><strong>Impressum-Generator:</strong> <a
+            href="https://www.impressum-generator.de">impressum-generator.de</a> (Kanzlei Hasselbach, Frankfurt)</li>
+      </ul>
+      <footer>© Copyright 2025 David Pyritz</footer>
+    </article>
+  </main>
+</body>
+
+</html>
